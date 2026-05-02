@@ -201,6 +201,7 @@ pre code {
 }
 
 .bento-card {
+  --card-accent: var(--accent-indigo);
   background: var(--surface);
   border: 1px solid var(--border-micro);
   border-radius: 12px;
@@ -217,7 +218,7 @@ pre code {
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.3), transparent);
+  background: linear-gradient(90deg, transparent, var(--card-accent, rgba(99, 102, 241, 0.3)), transparent);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -225,11 +226,39 @@ pre code {
 .bento-card:hover {
   border-color: var(--border-hover);
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3), 0 0 40px var(--glow-indigo);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3), 0 0 40px color-mix(in srgb, var(--card-accent, #6366F1) 15%, transparent);
 }
 
 .bento-card:hover::before {
   opacity: 1;
+}
+
+.bento-svg {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.75rem;
+  color: var(--card-accent, var(--accent-indigo));
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.bento-card:hover .bento-svg {
+  opacity: 1;
+}
+
+.bento-hero {
+  grid-column: span 1;
+  grid-row: span 2;
+  padding-top: 2rem;
+}
+
+.bento-hero .bento-svg {
+  width: 56px;
+  height: 56px;
+}
+
+.bento-wide {
+  grid-column: span 2;
 }
 
 .bento-card-icon {
@@ -249,7 +278,7 @@ pre code {
 
 .bento-card-count {
   font-size: 0.8rem;
-  color: var(--accent-indigo);
+  color: var(--card-accent, var(--accent-indigo));
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
@@ -304,6 +333,7 @@ pre code {
 }
 
 .lifecycle-node {
+  --lc: var(--accent-indigo);
   background: var(--surface);
   border: 1px solid var(--border-micro);
   border-radius: 8px;
@@ -316,9 +346,9 @@ pre code {
 }
 
 .lifecycle-node:hover {
-  color: var(--accent-indigo);
-  border-color: rgba(99, 102, 241, 0.2);
-  box-shadow: 0 0 20px var(--glow-indigo);
+  color: var(--lc);
+  border-color: color-mix(in srgb, var(--lc) 25%, transparent);
+  box-shadow: 0 0 20px color-mix(in srgb, var(--lc) 15%, transparent);
 }
 
 .lifecycle-arrow {
@@ -369,5 +399,6 @@ hr {
   .stats-row { gap: 1.5rem; }
   .stat-number { font-size: 2rem; }
   .bento-grid { grid-template-columns: 1fr; }
+  .bento-wide, .bento-hero { grid-column: span 1; grid-row: span 1; }
   .lifecycle-flow { flex-wrap: wrap; }
 }
