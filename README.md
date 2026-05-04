@@ -2,6 +2,8 @@
 
 > **A comprehensive open-source skills library enabling AI agents to autonomously conduct AI research — from idea to paper. 99 skills across 22 categories.**
 
+English | [中文](README_CN.md)
+
 <p align="center">
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
   <a href="https://github.com/qcmuu/AI-Research-Skills"><img src="https://img.shields.io/badge/GitHub-Repo-blue.svg?logo=github" alt="GitHub"></a>
