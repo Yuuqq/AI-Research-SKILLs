@@ -206,7 +206,7 @@
 - **[Mergekit](19-emerging-techniques/mergekit/)** - 无需 GPU 合并微调后的 LLM；SLERP、TIES、DARE、Frankenmerging
 
 ### 论文写作（4 个技能）
-- **[ML 论文写作](20-ml-paper-writing/)** - 为 NeurIPS、ICML、ICLR、ACL、AAAI、COLM 撰写可发表论文
+- **[ML 论文写作](20-ml-paper-writing/ml-paper-writing/)** - 为 NeurIPS、ICML、ICLR、ACL、AAAI、COLM 撰写可发表论文
 - **[学术绘图](20-ml-paper-writing/academic-plotting/)** - matplotlib/seaborn 出版级图表和 Gemini AI 架构图
 - **[会议报告](20-ml-paper-writing/presenting-conference-talks/)** - 在 ML 会议上展示研究成果
 - **[系统论文写作](20-ml-paper-writing/systems-paper-writing/)** - 撰写系统导向的 ML 研究论文
@@ -283,7 +283,6 @@ AI-Research-Skills/
 ├── README.md
 ├── README_CN.md
 ├── CONTRIBUTING.md
-├── SKILL_TEMPLATE.md
 ├── 0-autoresearch-skill/        (1 个技能)
 ├── 01-model-architecture/       (5 个技能)
 ├── 02-tokenization/             (2 个技能)

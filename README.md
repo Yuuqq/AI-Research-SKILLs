@@ -206,7 +206,7 @@ The **Autoresearch** skill orchestrates the entire lifecycle autonomously, routi
 - **[Mergekit](19-emerging-techniques/mergekit/)** - Merge fine-tuned LLMs without GPU; SLERP, TIES, DARE, Frankenmerging
 
 ### ML Paper Writing (4 skills)
-- **[ML Paper Writing](20-ml-paper-writing/)** - Write publication-ready papers for NeurIPS, ICML, ICLR, ACL, AAAI, COLM
+- **[ML Paper Writing](20-ml-paper-writing/ml-paper-writing/)** - Write publication-ready papers for NeurIPS, ICML, ICLR, ACL, AAAI, COLM
 - **[Academic Plotting](20-ml-paper-writing/academic-plotting/)** - Publication-quality figures with matplotlib/seaborn and Gemini AI diagrams
 - **[Conference Talks](20-ml-paper-writing/presenting-conference-talks/)** - Present research at ML conferences
 - **[Systems Paper Writing](20-ml-paper-writing/systems-paper-writing/)** - Write systems-oriented ML research papers
@@ -281,8 +281,8 @@ ls 08-distributed-training/  # DeepSpeed, FSDP, Accelerate, Megatron-Core, etc.
 ```
 AI-Research-Skills/
 ├── README.md
+├── README_CN.md
 ├── CONTRIBUTING.md
-├── SKILL_TEMPLATE.md
 ├── 0-autoresearch-skill/        (1 skill)
 ├── 01-model-architecture/       (5 skills)
 ├── 02-tokenization/             (2 skills)
